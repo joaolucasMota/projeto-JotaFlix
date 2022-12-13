@@ -17,6 +17,7 @@
 .lista-filmes{
     max-width: 800px;
     margin: 14px auto ;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
 }
 
 .lista-filmes article{
@@ -24,14 +25,16 @@
     background-color: var(--cinza);
     padding: 15px;
     border-radius: 2px;
+    
 }
 
 .titulo{
     margin-bottom: 14px;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
     display: block;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow:  3px 3px 5px rgba(0, 0, 0, 0.314);
 }
 
 .lista-filmes img{
@@ -58,6 +61,7 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     transition-duration: .5s;
+    text-shadow:3px 3px 5px rgba(0, 0, 0, 0.314);
 }
 
 .lista-filmes a:hover{

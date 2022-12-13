@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import api from '../../services/api';
 import './filme.css';
+import { toast } from 'react-toastify';
 
 function Filme(){
     const {id} = useParams();
@@ -40,13 +41,13 @@ function Filme(){
         const temFilme = filmesSalvos.some((filmesalvo)=> filmesalvo.id === filme.id)
 
         if(temFilme){
-            alert('ja tem esse filme');
+            toast.warn('Filme já adicioado.');
             return;
         }
 
         filmesSalvos.push(filme);
         localStorage.setItem("@jotaflix", JSON.stringify(filmesSalvos))
-        alert('filme adicionado a lista')
+        toast.success('Filme adicionado aos favoritos.')
     }
 
     if(loading){

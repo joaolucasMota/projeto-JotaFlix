@@ -15,7 +15,7 @@
 
 .filme-info h1 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 90px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -24,7 +24,7 @@
     object-fit: cover;
     width: 800px;
     max-width: 100%;
-    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
 }
 
 .info-filme {
@@ -44,6 +44,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.area-buttons{
+    margin-bottom: 30px;
+}
+
 .area-buttons button {
     margin: 20px 80px 0px 0px;
     border-radius: 6px;
@@ -55,6 +59,8 @@
     color:var(--branco);
     font-weight: bold;
     transition-duration: .5s;
+    border-color: var(--verde);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
 }
 
 .area-buttons button:hover{
@@ -65,8 +71,10 @@
 .area-buttons a {
     text-decoration: none;
     color: var(--branco);
+    border-color: var(--verde);
+    
 }
 
 .area-buttons a:hover{
-    color:#06a663
+    color:#06a663;
 }

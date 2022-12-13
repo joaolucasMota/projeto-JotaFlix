@@ -22,7 +22,9 @@ header {
     color: var(--branco);
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.314);
 }
+
 
 .favoritos{
     text-decoration: none;
