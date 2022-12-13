@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --verde: #06a663;
+  --cinza: #adadad73;
+  --branco: white;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Primeiro vou tirar a margin e o padding de todos os elemntos*/
+*{
+  margin: 0;
+  padding: 0;
+  /*esse comenaod de baixo vai fazer com que a box não ultrapasse o tamanho de width e height msmo que o padding e a margin faça ultrapassar*/
+  box-sizing: border-box;
+}
+
+body{
+ font-family: 'Times New Roman', Times, serif; 
+ background-color: var(--branco);
+}
+
+.app{
+  display: flex;
+  width: 100%;
+  /*justify content vai alinhar toda a aplicação ao centro*/
+  justify-content: center;
+  /*comando abaixo vai alinhar os itens ao centro*/
+  align-items: center;
+  /*o flex direction vai indicar como vou alinhar os itens, nesse caso vai ser em coluna*/
+  flex-direction: column;
+
 }

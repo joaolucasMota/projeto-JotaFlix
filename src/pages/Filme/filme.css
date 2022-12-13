@@ -1,0 +1,72 @@
+:root {
+    --verde: #06a663;
+    --cinza: #adadad73;
+    --branco: white;
+  
+  }
+
+.filme-info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 0 8px;
+}
+
+.filme-info h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    text-align: center;
+}
+
+.filme-info img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 800px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info-filme {
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 0px;
+}
+
+.filme-info h3 {
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+.filme-info p{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.area-buttons button {
+    margin: 20px 80px 0px 0px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--verde);
+    text-decoration: none;
+    color:var(--branco);
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.area-buttons button:hover{
+    background-color: var(--cinza);
+    color: var(--verde);
+}
+
+.area-buttons a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.area-buttons a:hover{
+    color:#06a663
+}
